@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Sweet Accent</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="./main.js"></script>
   </head>
   <body>
     <!-- sidenav -->
@@ -143,7 +145,7 @@
         with all of our clients to provide the best experience. Our premium
         party package allows us to completely transform your event space.
         Premium events with 150 guests or less: $500. 151 - 300 guests: $800.
-        Events with 301-400 guests: $1,100. Please message us about events with
+        Events with 301-400 guests: $1,200. Please message us about events with
         401 guests or more.
       </p>
     </div>
@@ -158,16 +160,18 @@
       </p>
 <h3>We will make your event dreams come true!<h3>
         <div class="container">
-            <form action="/action_page.php">
-                <label for="fname"> Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                <label for="lname">Email</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your Email..">
-                <label for="lname">Phone</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your Phone Number..">
-                <label for="subject">Message</label>
-                <textarea id="subject" name="subject" placeholder="Message Us.." style="height:200px"></textarea>
-                <input type="submit" value="Submit">
+            <form action="https://formspree.io/jamesbaptiste@yahoo.com"
+  method="POST">
+                <label>Name</label>
+                <input type="text" name="name" class="name" placeholder="Your name..">
+                <label>Email</label>
+                <input type="text" name="email" class="email" placeholder="Your Email..">
+                <label>Phone</label>
+                <input type="text" name="phone" class="phone" placeholder="Your Phone Number..">
+                <label>Message</label>
+                <textarea name="message" class="message" placeholder="Message Us.." style="height:200px"></textarea>
+                <input type="submit" class="submit" value="Submit">
+                <div class="status"></div>
             </form>
         </div>
     </div>
