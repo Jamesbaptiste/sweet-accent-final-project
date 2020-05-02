@@ -1,0 +1,191 @@
+/* html and body */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: px;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* sidenav */
+
+.sidenav {
+  height: 100%;
+  width: 315px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(191, 127, 63, 0.1);
+  overflow-x: hidden;
+  padding-top: 250px;
+}
+
+.sidenav a {
+  padding: 30px 50px 0px 0px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
+  color: black;
+  display: block;
+  text-align: right;
+}
+
+.sidenav a:hover {
+  color: grey;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* logo */
+
+.logo {
+  position: relative;
+  left: 380px;
+  padding: 160px 20px;
+}
+
+/* about us */
+
+.about-us {
+  margin-left: 315px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 110px 20px;
+  background-color: rgb(255, 229, 229);
+  line-height: 1.6;
+}
+
+/* gallery */
+
+.gallery {
+  margin-left: 315px;
+  font-size: 20px;
+  padding: 20px 20px;
+  line-height: 1.6;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.highlight {
+  opacity: 0.6;
+}
+
+.active,
+.highlight:hover {
+  opacity: 1;
+}
+
+/* pricing */
+
+.pricing {
+  margin-left: 315px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 40px 20px;
+  background-color: rgb(255, 229, 229);
+  line-height: 1.6;
+}
+
+/* contact */
+
+.contact {
+  margin-left: 315px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 50px 20px;
+  line-height: 1.6;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  color: grey;
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+  color: grey;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: rgb(255, 229, 229);
+  padding: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}

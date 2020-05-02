@@ -1,211 +1,27 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Sweet Accent</title>
-    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: px;
-        overflow-x: hidden;
-        font-family: "Lato", sans-serif;
-        scroll-behavior: smooth;
-      }
-
-      .sidenav {
-        height: 100%;
-        width: 315px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: rgba(191, 127, 63, 0.1);
-        overflow-x: hidden;
-        padding-top: 250px;
-      }
-
-      .sidenav a {
-        padding: 30px 50px 0px 0px;
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: bolder;
-
-        color: black;
-        display: block;
-        text-align: right;
-      }
-
-      .sidenav a:hover {
-        color: grey;
-      }
-      .logo {
-        position: relative;
-        left: 380px;
-        padding: 160px 20px;
-      }
-      .about-us {
-        margin-left: 315px; /* Same as the width of the sidenav */
-        font-size: 20px; /* Increased text to enable scrolling */
-        padding: 110px 20px;
-        background-color: rgb(255, 229, 229);
-        line-height: 1.6;
-      }
-      .gallery {
-        margin-left: 315px; /* Same as the width of the sidenav */
-        font-size: 20px; /* Increased text to enable scrolling */
-        padding: 20px 20px;
-        line-height: 1.6;
-      }
-      .pricing {
-        margin-left: 315px; /* Same as the width of the sidenav */
-        font-size: 20px; /* Increased text to enable scrolling */
-        padding: 40px 20px;
-        background-color: rgb(255, 229, 229);
-        line-height: 1.6;
-      }
-      .contact {
-        margin-left: 315px; /* Same as the width of the sidenav */
-        font-size: 20px; /* Increased text to enable scrolling */
-        padding: 50px 20px;
-        line-height: 1.6;
-      }
-
-      @media screen and (max-height: 450px) {
-        .sidenav {
-          padding-top: 15px;
-        }
-        .sidenav a {
-          font-size: 18px;
-        }
-      }
-      /* body {font-family: Arial, Helvetica, sans-serif;} */
-/* * {box-sizing: border-box;} */
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: white;
-  padding: 12px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  color:grey;
-
-}
-
-input[type=submit]:hover {
-  background-color: black;
-  color: grey;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: rgb(255, 229, 229);
-  padding: 20px;
-}
-* {
-  box-sizing: border-box;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <!-- sidenav -->
     <div class="sidenav">
-      <a href="#home">HOME</a>
+      <a href="#home" >HOME</a>
       <a href="#about-us">ABOUT US</a>
       <a href="#gallery">GALLERY</a>
       <a href="#pricing">PRICING</a>
       <a href="#contact">CONTACT</a>
     </div>
-    <div class="logo">
+    <!-- logo -->
+    <div  class="logo">
       <img src="IMG1.PNG" alt="SA" width="1000" height="600" />
+      <p></p>
     </div>
+    <!-- about us -->
     <div id="about-us" class="about-us">
       <h2>About Us</h2>
       <p>
@@ -215,8 +31,8 @@ img {
         decorate your event to ensure you and your guests never forget this
         celebration.
       </p>
-      
     </div>
+    <!-- gallery -->
     <div id="gallery" class="gallery">
       <h2>Gallery</h2>
       <p>
@@ -224,7 +40,7 @@ img {
         to love-filled marriage proposals, check out all of our fun backdrops.
         We will customize and personalize to your specific event and theme.
       </p>
-    
+
     <div class="container">
         <div class="mySlides">
             <div class="numbertext"></div>
@@ -263,63 +79,57 @@ img {
     
         <div class="row">
             <div class="column">
-                <img class="demo cursor" src="IMG2.JPG" style="width:100%" onclick="currentSlide(1)">
+                <img class="highlight cursor" src="IMG2.JPG" style="width:100%" onclick="currentSlide(1)">
             </div>
             <div class="column">
-                <img class="demo cursor" src="IMG3.JPG" style="width:100%" onclick="currentSlide(2)">
+                <img class="highlight cursor" src="IMG3.JPG" style="width:100%" onclick="currentSlide(2)">
             </div>
             <div class="column">
-                <img class="demo cursor" src="IMG4.JPG" style="width:100%" onclick="currentSlide(3)">
+                <img class="highlight cursor" src="IMG4.JPG" style="width:100%" onclick="currentSlide(3)">
             </div>
             <div class="column">
-                <img class="demo cursor" src="IMG5.JPG" style="width:100%" onclick="currentSlide(4)">
+                <img class="highlight cursor" src="IMG5.JPG" style="width:100%" onclick="currentSlide(4)">
             </div>
             <div class="column">
-                <img class="demo cursor" src="IMG6.JPG" style="width:100%" onclick="currentSlide(5)">
+                <img class="highlight cursor" src="IMG6.JPG" style="width:100%" onclick="currentSlide(5)">
             </div>
             <div class="column">
-                <img class="demo cursor" src="IMG7.JPG" style="width:100%" onclick="currentSlide(6)">
+                <img class="highlight cursor" src="IMG7.JPG" style="width:100%" onclick="currentSlide(6)">
             </div>
         </div>
     </div>
-    
+    <!-- javascript for gallery carousel -->
     <script>
+      //show first slide
         var slideIndex = 1;
         showSlides(slideIndex);
-
+        //scroll right or left
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
-
+        //allow clickable slide
         function currentSlide(n) {
             showSlides(slideIndex = n);
         }
-
+        //
         function showSlides(n) {
-            var i;
             var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
+            var active = document.getElementsByClassName("highlight");
             if (n > slides.length) { slideIndex = 1 }
             if (n < 1) { slideIndex = slides.length }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+            //highlight active slide
+            for (i = 0; i < active.length; i++) {
+                active[i].className = active[i].className.replace(" active", "");
             }
             slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
+            active[slideIndex - 1].className += " active";
         }
     </script>
-                <!-- <img src="IMG2.JPG" alt="SA" width="200" height="200" />
-                <img src="IMG3.JPG" alt="SA" width="200" height="200" />
-                <img src="IMG4.JPG" alt="SA" width="200" height="200" />
-                <img src="IMG5.JPG" alt="SA" width="200" height="200" />
-                <img src="IMG6.JPG" alt="SA" width="200" height="200" />
-                <img src="IMG7.JPG" alt="SA" width="200" height="200" /> -->
     </div>
+    <!-- pricing -->
     <div id="pricing" class="pricing">
       <h2>Pricing</h2>
       <p>
@@ -333,10 +143,11 @@ img {
         with all of our clients to provide the best experience. Our premium
         party package allows us to completely transform your event space.
         Premium events with 150 guests or less: $500. 151 - 300 guests: $800.
-        Events with 301-400 guests: $1100. Please message us about events with
+        Events with 301-400 guests: $1,100. Please message us about events with
         401 guests or more.
       </p>
     </div>
+    <!-- contact -->
     <div id="contact" class="contact">
       <h2>Contact Us</h2>
       <p>
@@ -345,28 +156,20 @@ img {
         backdrops. We will make it an experience you and your party will never
         forget.
       </p>
-
 <h3>We will make your event dreams come true!<h3>
-
         <div class="container">
             <form action="/action_page.php">
                 <label for="fname"> Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
                 <label for="lname">Email</label>
                 <input type="text" id="lname" name="lastname" placeholder="Your Email..">
                 <label for="lname">Phone</label>
                 <input type="text" id="lname" name="lastname" placeholder="Your Phone Number..">
-
-
-
                 <label for="subject">Message</label>
                 <textarea id="subject" name="subject" placeholder="Message Us.." style="height:200px"></textarea>
-
                 <input type="submit" value="Submit">
             </form>
         </div>
     </div>
-    
   </body>
 </html>
