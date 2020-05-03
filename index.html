@@ -10,6 +10,7 @@
     <script src="./main.js"></script>
   </head>
   <body>
+
     <!-- sidenav -->
     <div class="sidenav">
       <a href="#home" >HOME</a>
@@ -18,11 +19,13 @@
       <a href="#pricing">PRICING</a>
       <a href="#contact">CONTACT</a>
     </div>
+
     <!-- logo -->
     <div  class="logo">
       <img src="IMG1.PNG" alt="SA" width="1000" height="600" />
       <p></p>
     </div>
+
     <!-- about us -->
     <div id="about-us" class="about-us">
       <h2>About Us</h2>
@@ -34,6 +37,7 @@
         celebration.
       </p>
     </div>
+
     <!-- gallery -->
     <div id="gallery" class="gallery">
       <h2>Gallery</h2>
@@ -43,6 +47,7 @@
         We will customize and personalize to your specific event and theme.
       </p>
 
+    <!-- images -->
     <div class="container">
         <div class="mySlides">
             <div class="numbertext"></div>
@@ -76,9 +81,8 @@
     
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
-    
-
-    
+        
+        <!-- thumbnail images -->
         <div class="row">
             <div class="column">
                 <img class="highlight cursor" src="IMG2.JPG" style="width:100%" onclick="currentSlide(1)">
@@ -100,20 +104,24 @@
             </div>
         </div>
     </div>
+    
     <!-- javascript for gallery carousel -->
     <script>
       //show first slide
         var slideIndex = 1;
         showSlides(slideIndex);
+
         //scroll right or left
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
+
         //allow clickable slide
         function currentSlide(n) {
             showSlides(slideIndex = n);
         }
-        //
+
+        //show slides
         function showSlides(n) {
             var slides = document.getElementsByClassName("mySlides");
             var active = document.getElementsByClassName("highlight");
@@ -122,6 +130,7 @@
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
+
             //highlight active slide
             for (i = 0; i < active.length; i++) {
                 active[i].className = active[i].className.replace(" active", "");
@@ -131,6 +140,7 @@
         }
     </script>
     </div>
+
     <!-- pricing -->
     <div id="pricing" class="pricing">
       <h2>Pricing</h2>
@@ -149,6 +159,7 @@
         401 guests or more.
       </p>
     </div>
+
     <!-- contact -->
     <div id="contact" class="contact">
       <h2>Contact Us</h2>
@@ -158,8 +169,10 @@
         backdrops. We will make it an experience you and your party will never
         forget.
       </p>
-<h3>We will make your event dreams come true!<h3>
+<h3>We will make all of your event dreams come true!<h3>
         <div class="container">
+
+          <!-- make working contact form with formspree -->
             <form action="https://formspree.io/jamesbaptiste@yahoo.com"
   method="POST">
                 <label>Name</label>
