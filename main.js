@@ -42,6 +42,4 @@ $(document).ready(function () {
 });
 
 //restore scroll to top when refreshed
-if ("scrollRestoration" in history) {
-  history.scrollRestoration = "manual";
-}
+document.body.scrollTop = document.documentElement.scrollTop = 0;
